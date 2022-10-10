@@ -8,11 +8,10 @@ from re import sub
 import win32com.client as win32
 import csv
 import datetime
-
+import os
 
 CSV_PATH = "followUps.csv"
-USER_EMAIL = "info@vardaconcealedcarry.com"
-
+USER_EMAIL = os.getenv("USER_EMAIL") 
 # get access to outlook
 outlook = win32.Dispatch("Outlook.Application")
 
