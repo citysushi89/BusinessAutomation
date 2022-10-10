@@ -1,5 +1,8 @@
-# save_plaintext_email_to_drafts.py saves a message to drafts, 
-# message.Send() currently does not work, throws an error
+"""
+save_plaintext_email_to_drafts.py saves a message to drafts, 
+message.send() does not work on my machine
+"""
+
 
 import win32com.client as win32
 import os
@@ -23,6 +26,6 @@ message._oleobj_.Invoke(*(64209, 0, 8, 0, namespace_object.Accounts.Item("info@v
 
 message.Display()
 # To save to drafts
-message.Save()  
+message.save()  
 # To send the message
-# message.Send()
+message.send()

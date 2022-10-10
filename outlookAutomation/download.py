@@ -1,9 +1,10 @@
+# download.py accesses outlook inbox and prints the subject line of each message
+
 from pathlib import Path
 from re import sub
 import win32com.client as win32
 import re
 
-# download.py accesses outlook inbox and prints the subject line of each message
 
 # Create output folder
 output_dir = Path.cwd() / "Output"

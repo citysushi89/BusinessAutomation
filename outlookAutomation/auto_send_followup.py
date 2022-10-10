@@ -1,6 +1,8 @@
-# auto_send_followup.py checks through emails in one's inbox against a csv of user-created followup reminders, 
-# if today's date matches the recorded followup date, and no response email is found in the inbox,
-# opens and saves a draft with a pre-written followup message
+"""
+auto_send_followup.py checks through emails in one's inbox against a csv of user-created followup reminders, 
+if today's date matches the recorded followup date, and no response email is found in the inbox,
+opens and saves a draft with a pre-written followup message
+"""
 
 from re import sub
 import win32com.client as win32

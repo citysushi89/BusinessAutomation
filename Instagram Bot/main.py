@@ -1,3 +1,8 @@
+"""
+Instagram Bot / main.py logs into Instagram and searches through each list item in HASHTAG_LIST 
+and only likes the image if the account has not liked it before
+"""
+
 import random
 import time
 from selenium import webdriver
