@@ -48,7 +48,6 @@ with open("followUps.csv", "r") as f:
         temp_tuple = (line[0], line[1], line[2], line[3])
         csv_row_to_remain.append(temp_tuple)
 
-print(follow_up_dates)
 # Gets subjects of all messages in the inbox 
 olNS = outlook.GetNameSpace("MAPI")
 inbox = olNS.GetDefaultFolder(6)
