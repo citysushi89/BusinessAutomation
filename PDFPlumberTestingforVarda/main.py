@@ -56,7 +56,7 @@ with pdfplumber.open("PDFPlumberTestingforVarda/pdfs/Utah out of state.pdf") as 
         utoos_list.append(variable_to_add)
 
 
-# Playing with master list and reading lines, but puts the state as one line and another as
+# Get all lists into one
 with open("master_list.txt", encoding="utf8") as ma_list:
     ln = ma_list.readline()
     lncnt = 1
